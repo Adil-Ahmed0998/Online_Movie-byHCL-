@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Movie Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #333;
+        }
+        .movie-details, .movie-list {
+            margin-top: 20px;
+        }
+        .error {
+            color: red;
+        }
+        .home-link, .rent-link {
+            margin-top: 20px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div th:if="${movie != null}" class="movie-details">
+        <h1>Movie Details</h1>
+        <p>Movie ID: <span th:text="${movie.movieId}"></span></p>
+        <p>Movie Name: <span th:text="${movie.movieName}"></span></p>
+        <p>Collection: <span th:text="${movie.collection}"></span></p>
+        <a href="/" class="home-link">Home</a>
+        <a th:href="@{/rent(movieId=${movie.movieId})}" class="rent-link">Rent</a>
+    </div>
+    <div th:if="${movies != null}" class="movie-list">
+        <h1>Movie List</h1>
+        <div th:each="movie : ${movies}">
+            <p>Movie ID: <span th:text="${movie.movieId}"></span></p>
+            <p>Movie Name: <span th:text="${movie.movieName}"></span></p>
+            <p>Collection: <span th:text="${movie.collection}"></span></p>
+            <a th:href="@{/rent(movieId=${movie.movieId})}" class="rent-link">Rent</a>
+        </div>
+        <a href="/" class="home-link">Home</a>
+    </div>
+    <div th:if="${error != null}" class="error">
+        <h1 th:text="${error}"></h1>
+        <a href="/" class="home-link">Home</a>
+    </div>
+</body>
+</html>

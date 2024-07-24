@@ -1,0 +1,10 @@
+INSERT INTO MOVIE (movie_id, movie_name, collection) VALUES ('M001', 'The Mummy', 3000000);
+INSERT INTO MOVIE (movie_id, movie_name, collection) VALUES ('M002', 'The Firm', 2000000);
+INSERT INTO MOVIE (movie_id, movie_name, collection) VALUES ('M003', 'Mr. Bean', 2500000);
+INSERT INTO MOVIE (movie_id, movie_name, collection) VALUES ('M004', 'Logan', 2500000);
+INSERT INTO MOVIE (movie_id, movie_name, collection) VALUES ('M005', 'The Avengers: Age of Ultron', 6000000);
+INSERT INTO MOVIE (movie_id, movie_name, collection) VALUES ('M006', 'Top Gun', 2000000);
+INSERT INTO MOVIE (movie_id, movie_name, collection) VALUES ('M007', 'Moana', 4000000);
+INSERT INTO MOVIE (movie_id, movie_name, collection) VALUES ('M008', 'Finding Nemo', 5500000);
+INSERT INTO MOVIE (movie_id, movie_name, collection) VALUES ('M009', 'The Mummy Returns', 9000000);
+INSERT INTO MOVIE (movie_id, movie_name, collection) VALUES ('M010', 'Star Wars', 7000000);

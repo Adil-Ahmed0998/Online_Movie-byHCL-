@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Search by Movie ID</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            margin: 20px 0;
+        }
+        input[type="text"], input[type="submit"] {
+            padding: 10px;
+            margin: 5px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Search by Movie ID</h1>
+    <form action="/searchById" method="get">
+        <label for="movieId">Enter the Movie ID:</label>
+        <input type="text" id="movieId" name="movieId" required>
+        <input type="submit" value="Search">
+    </form>
+    <a href="/">Home</a>
+</body>
+</html>
